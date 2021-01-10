@@ -9,3 +9,9 @@ def welcome(request):
 
 def date(request):
     return HttpResponse("This page was served at " + str(datetime.now()))
+
+
+def about_me(request):
+    return HttpResponse("I am will. I am writing a silly about me page"
+                        "Python seems to be pretty cool. Much smaller than"
+                        "Java.  Linebreaks?")
